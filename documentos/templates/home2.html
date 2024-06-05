@@ -1,0 +1,55 @@
+{% extends 'original2.html' %} 
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+         <!-- Contenedor para la imagen de fondo -->
+    
+    <img src="/static/jol.jpg" class = "imagen2"></img>
+    <h1 class="home">Almacén de Hacklnk</h1>
+    <h4 class="descripcion2">Bienvenidos a mi pagina</h4>
+
+    <hr>
+    
+    <div class="Tablacontenido">
+        <pre>
+                <h5 class=" tamanoletra"><br><a>Name                         Size - </a><hr></hr></h5>
+</pre>
+<a href="{% url 'crear_doc' %}" class="btn btn-primary m-1">Ingresa Tus Documentos</a><br>
+<img src="/static/dir.png" class = "imagen1"></img>    <a href="{% url 'doc_lista' %}">Primer Semestre</a> <br>
+<img src="/static/dir.png" class = "imagen1"></img>    <a href="{% url 'doc_lista2' %}">Segundo Semestre</a> <br>
+<img src="/static/dir.png" class = "imagen1"></img>    <a href="{% url 'doc_lista2' %}">Tercer Semestre</a> <br>
+<img src="/static/dir.png" class = "imagen1"></img>    <a href="{% url 'doc_lista2' %}">En Curso</a> <br>
+    
+  
+<!-- <a href="{% url 'doc_lista' %}" class="btn btn-primary m-1">Tus Documentos</a><br> -->
+                
+            
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+             
+
+</body>
+
+</html>
+{% endblock %}

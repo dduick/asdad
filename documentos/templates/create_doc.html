@@ -1,0 +1,9 @@
+{% extends 'home2.html'%} {% block content %}
+
+<h1>Ingresa tus Documentos</h1>
+<form action="/crear_doc/" method="POST">
+  {% csrf_token %} {{form.as_p}}
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+{% endblock %}

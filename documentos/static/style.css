@@ -1,0 +1,35 @@
+.imagen1 {
+    border-radius: 200px;
+    width: 40px
+}
+
+.imagen2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Colocar la imagen sobre el texto */
+    border-radius: 200px;
+    width: 60px
+}
+
+.fondo {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    position: relative; /* Asegura que el contenedor .fondo sea relativo */
+}
+
+
+
+.contenido {
+    position: relative; /* Asegura que el contenido sea posicionado correctamente */
+    z-index: 1; /* Coloca el contenido por encima de la imagen de fondo */
+    text-align: center;
+}
+.home {
+    text-align: center;
+}
+.descripcion2 {
+    text-align: center;
+}
+
